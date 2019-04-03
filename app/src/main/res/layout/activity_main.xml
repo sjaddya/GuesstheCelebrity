@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.sjaddya.guessthecelebrity.MainActivity">
+
+
+    <Button
+        android:id="@+id/optionD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Option D"
+        android:tag="3"
+        android:onClick="celebChosen"/>
+
+    <Button
+        android:id="@+id/optionC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/optionD"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Option C"
+        android:tag="2"
+        android:onClick="celebChosen"/>
+
+    <Button
+        android:id="@+id/optionB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/optionC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Option B"
+        android:tag="1"
+        android:onClick="celebChosen"/>
+
+    <Button
+        android:id="@+id/optionA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/optionB"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="option A"
+        android:tag="0"
+        android:onClick="celebChosen"/>
+
+    <ImageView
+        android:id="@+id/celebImageVIew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/optionA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:drawable/btn_dialog" />
+</RelativeLayout>
